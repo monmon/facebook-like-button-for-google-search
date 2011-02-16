@@ -1,0 +1,13 @@
+{
+  "name": "Facebook like button for Google search",
+  "version": "0.0.1",
+
+  "description": "This extension displays Facebook like buttons in google search results.",
+
+  "content_scripts": [{
+     "js": ["facebook-like-button.js"],
+     "matches": ["http://www.google.co.jp/search*"],
+     "run_at": "document_end"
+  }],
+  "permissions": ["http://www.google.co.jp/*"]
+}
